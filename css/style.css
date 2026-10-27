@@ -49,3 +49,10 @@ footer { background: #1b485d; padding: 24px; text-align: center; font-size: 18px
  .language { gap: 32px; font-size: 20px; padding: 8px 20px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Restore desktop reading size and rhythm without changing mobile rules. */
+@media (min-width: 761px) {
+ .content { width: 90%; max-width: 1440px; font-size: 25px; line-height: 1.3; }
+ .content p + p, .content ul + p, .content p + ul { margin-top: 16px; }
+ .topics li + li { margin-top: 4px; }
+}
